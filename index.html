@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Prabin Agarwal — Her Business, Her Investments</title>
+  <meta name="description" content="Financial confidence for women entrepreneurs. From earning to organising to investing to confidence. By Prabin Agarwal — AMFI Registered Mutual Fund Distributor."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Animated Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Prabin Agarwal" class="nav-logo-img"/>
+    </div>
+    <div class="nav-right">
+      <span class="nav-tag">AMFI Registered MF Distributor</span>
+    </div>
+  </nav>
+
+  <!-- Slide Arrows -->
+  <button class="arr arr-l" id="prevBtn" aria-label="Previous">
+    <svg width="20" height="20" fill="none"><path d="M13 16l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="arr arr-r" id="nextBtn" aria-label="Next">
+    <svg width="20" height="20" fill="none"><path d="M7 16l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Dots -->
+  <div class="dots" id="dots"></div>
+
+  <!-- Counter -->
+  <div class="counter" id="counter"><span class="c-now">01</span><span class="c-sep">/</span><span class="c-all">14</span></div>
+
+  <!-- ===== SLIDES ===== -->
+  <main class="deck" id="deck">
+
+    <!-- 1: HERO -->
+    <section class="s" id="s1">
+      <div class="s-bg-img" style="background-image:url('images/gold-jewellery.png')"></div>
+      <div class="s-overlay-hero"></div>
+      <div class="s-c center">
+        <div class="hero-logo-wrap">
+          <img src="logo.png" alt="Prabin Agarwal" class="hero-logo"/>
+        </div>
+        <h1 class="hero-h">
+          <span class="hline">Her Business.</span>
+          <span class="hline">Her <span class="o">Investments.</span></span>
+        </h1>
+        <p class="hero-p">A business creates income.<br/>Financial discipline creates <em>confidence</em>.</p>
+        <div class="hero-hint"><span>Press → or Space</span><div class="hint-pulse">→</div></div>
+      </div>
+    </section>
+
+    <!-- 2: REALITY -->
+    <section class="s" id="s2">
+      <div class="s-c center">
+        <p class="ey">The Reality</p>
+        <h2 class="sh">You Earn Well. But Are You <span class="o">Wealthy?</span></h2>
+        <p class="sp">Income is not wealth. Revenue is not security.</p>
+        <div class="stat-row">
+          <div class="stat-card">
+            <div class="stat-num" data-target="73">0</div>
+            <div class="stat-unit">%</div>
+            <p>of entrepreneurs reinvest all profits back into business</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="68">0</div>
+            <div class="stat-unit">%</div>
+            <p>have no separate personal investment portfolio</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="82">0</div>
+            <div class="stat-unit">%</div>
+            <p>rely solely on business for financial security</p>
+          </div>
+        </div>
+        <p class="kl">"Earning is a skill. Keeping is a discipline."</p>
+      </div>
+    </section>
+
+    <!-- 3: MONEY FLOW -->
+    <section class="s" id="s3">
+      <div class="s-c center">
+        <p class="ey">The Flow</p>
+        <h2 class="sh">Where Your Money <span class="o">Actually</span> Goes</h2>
+        <p class="sp">Every rupee you earn has only three destinations.</p>
+        <div class="flow-visual">
+          <div class="flow-center-circle"><span>YOUR<br/>INCOME</span></div>
+          <svg class="flow-svg" viewBox="0 0 600 300" fill="none">
+            <path class="flow-path fp1" d="M300 80 L100 250" stroke="#ed592b" stroke-width="2" stroke-dasharray="6 4"/>
+            <path class="flow-path fp2" d="M300 80 L300 250" stroke="#f17b57" stroke-width="2" stroke-dasharray="6 4"/>
+            <path class="flow-path fp3" d="M300 80 L500 250" stroke="#ed592b" stroke-width="2" stroke-dasharray="6 4"/>
+          </svg>
+          <div class="flow-targets">
+            <div class="flow-t">
+              <div class="flow-pct">45%</div>
+              <h3>Business</h3>
+              <p>Reinvestment & operations</p>
+            </div>
+            <div class="flow-t">
+              <div class="flow-pct">50%</div>
+              <h3>Personal</h3>
+              <p>Lifestyle & daily needs</p>
+            </div>
+            <div class="flow-t flow-t-glow">
+              <div class="flow-pct">5%</div>
+              <h3>Investments</h3>
+              <p>Wealth building ← This needs to change</p>
+            </div>
+          </div>
+        </div>
+        <p class="kl">"Most entrepreneurs fund the first two. Very few fund the third."</p>
+      </div>
+    </section>
+
+    <!-- 4: GROWTH VS SCALE -->
+    <section class="s" id="s4">
+      <div class="s-c">
+        <p class="ey">The Insight</p>
+        <h2 class="sh center">Growth Is Not <span class="o">Scale</span></h2>
+        <p class="sp center">Growth adds revenue. Scale builds systems that work without you.</p>
+        <div class="vs-container">
+          <div class="vs-side vs-left-side">
+            <h3>Growth</h3>
+            <div class="vs-chart">
+              <svg viewBox="0 0 200 150" class="vs-svg">
+                <line x1="20" y1="130" x2="180" y2="130" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <path class="vs-line-linear" d="M20 120 L60 105 L100 90 L140 75 L180 60" stroke="#325666" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span class="vs-label">Linear Returns</span>
+            </div>
+            <ul>
+              <li>More revenue = more effort</li>
+              <li>Dependent on your time</li>
+              <li>Income stops when you stop</li>
+            </ul>
+          </div>
+          <div class="vs-divider"><span class="vs-badge">VS</span></div>
+          <div class="vs-side vs-right-side">
+            <h3 class="o">Scale</h3>
+            <div class="vs-chart">
+              <svg viewBox="0 0 200 150" class="vs-svg">
+                <line x1="20" y1="130" x2="180" y2="130" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <path class="vs-line-exp" d="M20 125 L60 120 L100 108 L140 80 L180 20" stroke="#ed592b" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span class="vs-label vs-label-o">Compounding Returns</span>
+            </div>
+            <ul>
+              <li>Systems that earn for you</li>
+              <li>Independent of your time</li>
+              <li>Wealth builds while you sleep</li>
+            </ul>
+          </div>
+        </div>
+        <p class="kl center">"Don't just grow your business. Scale your wealth."</p>
+      </div>
+    </section>
+
+    <!-- 5: THE MYTH -->
+    <section class="s" id="s5">
+      <div class="s-c center">
+        <p class="ey">The Mistake</p>
+        <div class="myth-wrap">
+          <div class="myth-q">"</div>
+          <h2 class="myth-h" id="mythText">My Business Is My Investment</h2>
+          <div class="myth-q">"</div>
+        </div>
+        <div class="myth-after">
+          <p class="myth-truth">This is the most <span class="o">expensive</span> belief an entrepreneur can hold.</p>
+          <div class="myth-points">
+            <div class="mp"><span class="mp-x">✕</span>A business is an asset — but it's not diversified</div>
+            <div class="mp"><span class="mp-x">✕</span>Market shifts can erase years of effort overnight</div>
+            <div class="mp"><span class="mp-x">✕</span>You can't SIP into your own business</div>
+            <div class="mp"><span class="mp-x">✕</span>Business value ≠ personal financial security</div>
+          </div>
+          <p class="kl">"Your business funds your life. Investments fund your freedom."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6: RISK -->
+    <section class="s" id="s6">
+      <div class="s-c">
+        <p class="ey center">The Risk</p>
+        <h2 class="sh center">When Business Is Your <span class="o">Only</span> Asset</h2>
+        <div class="risk-row">
+          <div class="rk"><div class="rk-icon">⚡</div><h3>Market Shifts</h3><p>Industries evolve. Revenue is never guaranteed.</p></div>
+          <div class="rk"><div class="rk-icon">💔</div><h3>Health Disruptions</h3><p>If you stop, does your income stop?</p></div>
+          <div class="rk"><div class="rk-icon">🔒</div><h3>No Exit Value</h3><p>Most small businesses can't be sold.</p></div>
+          <div class="rk"><div class="rk-icon">⚠️</div><h3>Family Exposure</h3><p>Personal & business finances merge = double risk.</p></div>
+        </div>
+        <p class="kl center">"A single source of income is not security — it's fragility."</p>
+      </div>
+    </section>
+
+    <!-- 7: SHIFT -->
+    <section class="s s-grad" id="s7">
+      <div class="s-c center">
+        <p class="ey">The Shift</p>
+        <h2 class="sh big-sh"><span class="sw">Separate.</span> <span class="sw o">Multiply.</span> <span class="sw">Empower.</span></h2>
+        <p class="sp">Separate your business money from personal money — everything changes.</p>
+        <div class="sep-visual">
+          <div class="sep-box"><div class="sep-icon">🏢</div><h3>Business Account</h3><p>Operations · Payroll · Growth</p></div>
+          <div class="sep-arrow">
+            <svg width="60" height="24"><path d="M0 12h50M44 6l8 6-8 6" stroke="#ed592b" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="sep-box sep-glow"><div class="sep-icon">💎</div><h3>Personal Corpus</h3><p>Savings · SIPs · Emergency Fund</p></div>
+        </div>
+        <p class="kl">"Your business is your engine. Your investments are your wings."</p>
+      </div>
+    </section>
+
+    <!-- 8: FRAMEWORK -->
+    <section class="s" id="s8">
+      <div class="s-c center">
+        <p class="ey">The System</p>
+        <h2 class="sh">The 5-Step <span class="o">Money Framework</span></h2>
+        <div class="fw-row">
+          <div class="fw"><div class="fw-n">01</div><h3>Earn</h3><p>Generate consistent income</p></div>
+          <div class="fw-arr">→</div>
+          <div class="fw"><div class="fw-n">02</div><h3>Allocate</h3><p>Distribute with intention</p></div>
+          <div class="fw-arr">→</div>
+          <div class="fw"><div class="fw-n">03</div><h3>Grow</h3><p>Invest through SIPs</p></div>
+          <div class="fw-arr">→</div>
+          <div class="fw"><div class="fw-n">04</div><h3>Protect</h3><p>Insure against the unexpected</p></div>
+          <div class="fw-arr">→</div>
+          <div class="fw fw-last"><div class="fw-n">05</div><h3>Empower</h3><p>Build generational wealth</p></div>
+        </div>
+        <p class="kl">"A framework turns chaos into clarity."</p>
+      </div>
+    </section>
+
+    <!-- 9: SIP -->
+    <section class="s" id="s9">
+      <div class="s-c">
+        <div class="sip-layout">
+          <div class="sip-left">
+            <p class="ey">The Solution</p>
+            <h2 class="sh">SIP: Your Silent <span class="o">Wealth Partner</span></h2>
+            <ul class="bl">
+              <li>Start with as little as ₹5,000/month</li>
+              <li>Automate — remove emotion from investing</li>
+              <li>Benefit from rupee cost averaging</li>
+              <li>Watch compounding work in your favour</li>
+            </ul>
+            <p class="kl">"SIP is not an investment. It's a wealth habit."</p>
+          </div>
+          <div class="sip-right">
+            <div class="sip-chart-wrap">
+              <canvas id="sipCanvas" width="480" height="320"></canvas>
+              <div class="sip-legend">
+                <span><i class="sip-dot sip-d1"></i>Invested</span>
+                <span><i class="sip-dot sip-d2"></i>Returns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10: COMPOUNDING -->
+    <section class="s" id="s10">
+      <div class="s-c center">
+        <p class="ey">The Magic</p>
+        <h2 class="sh">The <span class="o">Compounding</span> Effect</h2>
+        <p class="sp">₹10,000/month SIP at 12% returns</p>
+        <div class="bars-wrap">
+          <div class="bar-col"><span class="bar-val">₹4.4L</span><div class="bar" data-h="40"></div><span class="bar-yr">5 yrs</span></div>
+          <div class="bar-col"><span class="bar-val">₹11.6L</span><div class="bar" data-h="85"></div><span class="bar-yr">10 yrs</span></div>
+          <div class="bar-col"><span class="bar-val">₹25.2L</span><div class="bar" data-h="140"></div><span class="bar-yr">15 yrs</span></div>
+          <div class="bar-col"><span class="bar-val">₹49.4L</span><div class="bar" data-h="210"></div><span class="bar-yr">20 yrs</span></div>
+          <div class="bar-col"><span class="bar-val bar-val-big">₹95.1L</span><div class="bar bar-hero" data-h="300"></div><span class="bar-yr">25 yrs</span></div>
+        </div>
+        <p class="kl">"The best time to start was 10 years ago. The second best is today."</p>
+      </div>
+    </section>
+
+    <!-- 11: LEGACY -->
+    <section class="s s-light" id="s11">
+      <div class="s-c center">
+        <p class="ey">Her Legacy</p>
+        <h2 class="sh">She Who Invests, <span class="o">Leads</span></h2>
+        <p class="sp">When a woman controls her finances, she transforms her family's future.</p>
+        <div class="leg-row">
+          <div class="leg"><div class="leg-i">👑</div><h3>Role Model</h3><p>Children learn money habits by watching you.</p></div>
+          <div class="leg"><div class="leg-i">🎯</div><h3>Decision Maker</h3><p>Financial independence gives you a seat at every table.</p></div>
+          <div class="leg"><div class="leg-i">🌟</div><h3>Culture Shaper</h3><p>You set the financial culture for generations.</p></div>
+        </div>
+        <p class="kl">"Investing isn't about money. It's about the legacy you leave."</p>
+      </div>
+    </section>
+
+    <!-- 12: TRANSFORMATION -->
+    <section class="s s-grad" id="s12">
+      <div class="s-c center">
+        <p class="ey">The Transformation</p>
+        <h2 class="sh">From <span class="o">Income</span> to <span class="o">Confidence</span></h2>
+        <div class="tf-row">
+          <div class="tf"><div class="tf-n">01</div><div class="tf-l">Income</div><div class="tf-d">You earn well</div></div>
+          <div class="tf-a">→</div>
+          <div class="tf"><div class="tf-n">02</div><div class="tf-l">Organisation</div><div class="tf-d">You separate & plan</div></div>
+          <div class="tf-a">→</div>
+          <div class="tf tf-glow"><div class="tf-n">03</div><div class="tf-l o">Confidence</div><div class="tf-d">Wealth outlasts work</div></div>
+        </div>
+        <p class="kl">"The goal isn't more money. The goal is more confidence."</p>
+        <a href="#" class="cta">Take the First Step →</a>
+      </div>
+    </section>
+
+    <!-- 13: SUMMARY -->
+    <section class="s" id="s13">
+      <div class="s-c">
+        <p class="ey center">Executive Summary</p>
+        <h2 class="sh center">Everything You Need <span class="o">to Know</span></h2>
+        <div class="sum-grid">
+          <div class="sum"><div class="sum-n">01</div><h3>The Problem</h3><p>Women earn well but lack structured financial planning.</p></div>
+          <div class="sum"><div class="sum-n">02</div><h3>The Mistake</h3><p>Business as only investment = no diversification.</p></div>
+          <div class="sum"><div class="sum-n">03</div><h3>The Framework</h3><p>Earn → Allocate → Grow → Protect → Empower.</p></div>
+          <div class="sum"><div class="sum-n">04</div><h3>The Solution</h3><p>Start SIPs. Automate. Build wealth monthly.</p></div>
+          <div class="sum"><div class="sum-n">05</div><h3>The Power</h3><p>Compounding creates life-changing wealth.</p></div>
+          <div class="sum"><div class="sum-n">06</div><h3>The Outcome</h3><p>Financial confidence & generational legacy.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14: FINAL CTA -->
+    <section class="s s-brand" id="s14">
+      <div class="s-c center">
+        <img src="images/logo.png" alt="Prabin Agarwal" class="cta-logo"/>
+        <h2 class="hero-h cta-h">
+          <span class="hline">Your Journey</span>
+          <span class="hline">Begins <span class="o-w">Now.</span></span>
+        </h2>
+        <p class="sp cta-sp">You built a business with courage.<br/>Now build wealth with discipline.</p>
+        <div class="cta-btns">
+          <a href="#" class="cta cta-w">Book a Free Consultation</a>
+          <a href="#" class="cta cta-ghost">Download Money Framework</a>
+        </div>
+        <p class="closing">"A business creates income. Financial discipline creates confidence."</p>
+        <div class="foot">
+          <strong>Prabin Agarwal</strong> · AMFI Registered Mutual Fund Distributor<br/>
+          <small>© 2026 All rights reserved.</small>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
